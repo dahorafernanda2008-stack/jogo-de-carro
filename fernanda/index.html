@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbo Race - Jogo de Carro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🏁 TURBO RACE</h1>
+        <p>Desvie dos carros e conquiste o maior recorde!</p>
+    </header>
+
+    <main class="container">
+        <section class="painel">
+            <div>🏆 Pontos: <span id="pontos">0</span></div>
+            <div>🚗 Velocidade: <span id="velocidade">1</span></div>
+            <div>⭐ Recorde: <span id="recorde">0</span></div>
+        </section>
+
+        <div class="jogo">
+            <canvas id="pista" width="400" height="600"></canvas>
+
+            <div id="telaInicial" class="sobreposicao">
+                <h2>🏎️ TURBO RACE</h2>
+                <p>Prepare-se para a corrida!</p>
+                <p>Use as setas ← → para desviar.</p>
+                <button id="botaoJogar">JOGAR</button>
+            </div>
+
+            <div id="telaFinal" class="sobreposicao escondido">
+                <h2>💥 FIM DE JOGO!</h2>
+                <p>Sua pontuação: <span id="pontosFinais">0</span></p>
+                <button id="botaoReiniciar">JOGAR NOVAMENTE</button>
+            </div>
+
+            <div id="telaPausa" class="sobreposicao escondido">
+                <h2>⏸️ JOGO PAUSADO</h2>
+                <button id="botaoContinuar">CONTINUAR</button>
+            </div>
+        </div>
+
+        <div class="controles">
+            <button id="esquerda" aria-label="Mover para esquerda">⬅️</button>
+            <button id="pausar">⏸️ Pausar</button>
+            <button id="direita" aria-label="Mover para direita">➡️</button>
+        </div>
+
+        <p class="instrucoes">
+            Teclado: ← → para mover | Espaço para pausar
+        </p>
+    </main>
+
+    <footer>
+        <p>Projeto de Desenvolvimento Web | Turbo Race</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
